@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp-pod
+spec:
+  containers:
+  - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/ijoshi_webapp
+    name: webapp
+    ports:
+    - containerPort: 80
+      protocol: TCP
