@@ -4,8 +4,8 @@ metadata:
   name: mysql-pod
 spec:
   containers:
-    - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/ijoshi_mysql:v0.1
-     name: mysql
-     ports:
-     - container port: 3306
-       protocol: TCP
+  - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/ijoshi_mysql:v0.1
+    name: mysql
+    ports:
+    - containerPort: 3306
+      protocol: TCP
