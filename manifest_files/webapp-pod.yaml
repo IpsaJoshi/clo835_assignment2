@@ -11,7 +11,7 @@ spec:
       protocol: TCP
     env:
     - name: DBHOST
-      value: mysql-pod
+      value: 10.244.0.5
     - name: DBPORT
       value: "3306"
     - name: DBUSER
