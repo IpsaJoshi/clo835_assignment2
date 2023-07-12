@@ -1,3 +1,6 @@
+kind.yaml
+kubectl
+
 # Local .terraform directories
 **/.terraform/*
 
