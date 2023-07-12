@@ -21,4 +21,5 @@ spec:
         ports:
         - containerPort: 3306
           protocol: TCP
-      restartPolicy: Never
+      restartPolicy: Always
+        
