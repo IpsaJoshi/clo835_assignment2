@@ -2,15 +2,17 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
     name: mysql-replicaset
+    labels:
+      app.kubernetes.io/name: mysql
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: mysql
+      app.kubernetes.io/name: mysql
   template:
     metadata:
       labels:
-        app: mysql
+        app.kubernetes.io/name: mysql
 spec:
   containers:
   - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/mysql:v0.1
@@ -18,7 +20,11 @@ spec:
     env:
     - name: MYSQL_ROOT_PASSWORD
       value: ipsa 
-      ports:
-      - containerPort: 3306
-        protocol: TCP
+    ports:
+    - containerPort: 3306
+      protocol: TCP
+    resources:
+      requests:
+        cpu: 100m
+        memory: 100Mi
    restartPolicy: Always
