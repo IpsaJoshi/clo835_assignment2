@@ -4,8 +4,17 @@ metadata:
   name: webapp-pod
 spec:
   containers:
-  - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/ijoshi_webapp
+  - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/webapp:v0.1
     name: webapp
     ports:
     - containerPort: 80
       protocol: TCP
+    env:
+    - name: DBHOST
+      value: mysql-pod
+    - name: DBPORT
+      value: "3306"
+    - name: DBUSER
+      value: root
+    - name: DBPWD
+      value: ipsa
