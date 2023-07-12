@@ -4,7 +4,7 @@ metadata:
   name: mysql-pod
 spec:
   containers:
-  - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/ijoshi_mysql:v0.1
+  - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/mysql:v0.1
     name: mysql
     env:
     - name: MYSQL_ROOT_PASSWORD
