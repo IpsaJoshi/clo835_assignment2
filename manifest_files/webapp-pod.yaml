@@ -7,11 +7,11 @@ spec:
   - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/webapp:v0.1
     name: webapp
     ports:
-    - containerPort: 80
+    - containerPort: 8081
       protocol: TCP
     env:
     - name: DBHOST
-      value: 10.244.0.5
+      value: 10.244.0.6
     - name: DBPORT
       value: "3306"
     - name: DBUSER
