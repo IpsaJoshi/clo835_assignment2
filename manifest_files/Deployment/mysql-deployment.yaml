@@ -8,11 +8,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mysql-deployment
+      app: mysql
   template:
     metadata:
       labels:
-        app: mysql--deployment
+        app: mysql-deployment
     spec:
       containers:
       - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/mysql:v0.1
