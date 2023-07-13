@@ -9,13 +9,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: webapp-deployment
       app: employees
       version: v1
   template:
     metadata:
       labels:
-        name: webapp-deployment
         app: employees
         version: v1
     spec:
@@ -27,7 +25,7 @@ spec:
           protocol: TCP
         env:
         - name: DBHOST
-          value: 10.244.0.44
+          value: 10.244.0.10
         - name: DBPORT
           value: "3306"
         - name: DBUSER
