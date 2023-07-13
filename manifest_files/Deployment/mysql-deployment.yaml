@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/mysql:v0.1
-        name: mysql
+        name: mysql-deployment
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: ipsa 
