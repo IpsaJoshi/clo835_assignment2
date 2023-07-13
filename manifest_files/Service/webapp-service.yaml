@@ -3,8 +3,8 @@ kind: Service
 metadata:
   name: webapp-service
   labels:
-    app.kubernetes.io/name: webapp
-    app.kubernetes.io/component: frontend
+    app: employees
+    version: v1
 spec:
   type: NodePort
   ports:
@@ -13,8 +13,9 @@ spec:
       targetPort: 8888
       nodePort: 30001
   selector:
-    app.kubernetes.io/name: webapp
-    app.kubernetes.io/component: frontend
+    matchLabels:
+      app: employees
+      version: v1
   
   
 
