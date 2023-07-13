@@ -21,7 +21,7 @@ spec:
       - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/webapp:v0.1
         name: webapp-deployment
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
           protocol: TCP
         env:
         - name: DBHOST
