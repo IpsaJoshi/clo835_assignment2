@@ -9,11 +9,13 @@ spec:
   replicas: 1
   selector:
     matchLabels:
+      name: webapp-deployment
       app: employees
       version: v1
   template:
     metadata:
       labels:
+        name: webapp-deployment
         app: employees
         version: v1
     spec:
@@ -21,7 +23,7 @@ spec:
       - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/webapp:v0.1
         name: webapp-deployment
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
           protocol: TCP
         env:
         - name: DBHOST

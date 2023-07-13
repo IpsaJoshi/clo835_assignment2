@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
     name: mysql-deployment
     labels:
-      app: mysql
+      app: mysql-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mysql
+      app: mysql-deployment
   template:
     metadata:
       labels:
-        app: mysql
+        app: mysql--deployment
     spec:
       containers:
       - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/mysql:v0.1
