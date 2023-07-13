@@ -13,9 +13,8 @@ spec:
       targetPort: 8888
       nodePort: 30001
   selector:
-    matchLabels:
-      app: employees
-      version: v1
+    app: employees
+    version: v1
   
   
 

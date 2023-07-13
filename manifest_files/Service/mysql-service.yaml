@@ -10,7 +10,6 @@ spec:
     - protocol: TCP
       port: 3306
   selector:
-    matchLabels:
-      app: mysql
+    app: mysql
   
     

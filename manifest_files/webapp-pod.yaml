@@ -14,7 +14,7 @@ spec:
       protocol: TCP
     env:
     - name: DBHOST
-      value: 10.244.0.30
+      value: 10.244.0.35
     - name: DBPORT
       value: "3306"
     - name: DBUSER
