@@ -10,7 +10,8 @@ spec:
       targetPort: 8888
       nodePort: 30001
   selector:
-    app: sql-deployment
+    app: employee
+    version: v1
 
   
   
