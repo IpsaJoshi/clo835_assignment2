@@ -16,13 +16,13 @@ spec:
     spec:
       containers:
       - image: 419810237977.dkr.ecr.us-east-1.amazonaws.com/webapp:v0.1
-        name: webapp
+        name: webapp-replicaset
         ports:
         - containerPort: 8080
           protocol: TCP
         env:
         - name: DBHOST
-          value: 10.244.0.35
+          value: 10.244.0.32
         - name: DBPORT
           value: "3306"
         - name: DBUSER
