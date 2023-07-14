@@ -7,10 +7,10 @@ spec:
   ports:
     - protocol: TCP
       port: 8080
-      targetPort: 8888
+      targetPort: 8080
       nodePort: 30001
   selector:
-    app: employee
+    app: employees
     version: v1
 
   
